@@ -10,7 +10,7 @@
     "@testing-library/user-event": "^13.2.1",
     "axios": "^1.2.1",
     "daisyui": "^2.46.0",
-    "firebase": "^9.15.0",
+    "firebase": "^9.18.0",
     "flowbite": "^1.5.5",
     "flowbite-react": "^0.3.7",
     "framer-motion": "^8.0.2",
