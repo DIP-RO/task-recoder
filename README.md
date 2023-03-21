@@ -2,7 +2,7 @@
 <img src="https://i.ibb.co/Bzm0FQ8/Capturfsdfsdfdsfe.jpg" alt="Alt text" title="Optional title">
 
 
-# TASK MANAGER
+# Task Recoder
 
 - [Live Site](https://task-manager-v2-81bdb.web.app/).
 - [Server](https://github.com/itsmiraz/task_manager_v2_server)

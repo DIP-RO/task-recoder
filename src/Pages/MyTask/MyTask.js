@@ -71,7 +71,7 @@ const MyTask = () => {
 
   const handledelete = (id) => {
     console.log(id);
-    fetch(`http://localhost:5000/task/${id}`, {
+    fetch(`https://task-recoder-v2-server-main.vercel.app/task/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
@@ -84,7 +84,7 @@ const MyTask = () => {
   };
 
   const handleDone = (id) => {
-    fetch(`http://localhost:5000/donetask/${id}`, {
+    fetch(`https://task-recoder-v2-server-main.vercel.app/donetask/${id}`, {
       method: "PUT",
     })
       .then((res) => res.json())
@@ -115,13 +115,16 @@ const MyTask = () => {
       details,
       image,
     };
-    fetch(`http://localhost:5000/edittask/${edittask}`, {
-      method: "PUT",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(updateDoc),
-    })
+    fetch(
+      `https://task-recoder-v2-server-main.vercel.app/edittask/${edittask}`,
+      {
+        method: "PUT",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(updateDoc),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

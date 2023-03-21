@@ -30,7 +30,7 @@ const AddTask = () => {
       image,
     };
     console.log(task);
-    fetch(`http://localhost:5000/task`, {
+    fetch(`https://task-recoder-v2-server-main.vercel.app/task`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

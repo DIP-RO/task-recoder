@@ -7,7 +7,7 @@ export const gettasks = createAsyncThunk(
     // console.log(getState());
     try {
       const { data, refetch } = await axios.get(
-        `http://localhost:5000/tasks?email=${object}`
+        `https://task-recoder-v2-server-main.vercel.app/tasks?email=${object}`
       );
       return data;
     } catch (error) {
